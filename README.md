@@ -174,7 +174,7 @@ See `docs/methodology.md` for:
 
 ## 🔧 Advanced
 
-### LLM Integration (Optional - OpenRouter)
+### LLM Integration ( OpenRouter)
 
 This project supports **optional LLM integration** via OpenRouter for generating more linguistically diverse content. By default, uses fast template-based generation for reproducibility.
 
@@ -201,45 +201,10 @@ python src/main.py
 - `LLM_PERCENTAGE=10` - 10% LLM, balanced performance/variety (~5 min, ~$1-2)
 - `LLM_PERCENTAGE=100` - All LLM, maximum variety (~2-4 hours, ~$10-15)
 
-**See full guide**: `docs/LLM_INTEGRATION_GUIDE.md`
-
-**Recommendation for submission**: Keep `LLM_PERCENTAGE=0` to maintain reproducibility. The LLM code demonstrates production readiness and extensibility.
+**Recommendation for submission**: Keep `LLM_PERCENTAGE=10` to maintain reproducibility. The LLM code demonstrates production readiness and extensibility.
 
 ### Custom Scrapers
 Extend `src/scrapers/sources.py` to fetch real data:
 - Company names from Y Combinator, Crunchbase
 - Task patterns from GitHub issues
 - Project templates from Asana community
-
-## 📋 Submission Package
-
-For academic/interview submission:
-1. **Documentation**: `docs/methodology.md` (expand to Google Doc)
-2. **Code**: This repository
-3. **Database**: `output/asana_simulation.sqlite`
-4. **ER Diagram**: Generate from DBML in `docs/methodology.md` at https://dbdiagram.io
-
-## 🏆 Quality Metrics
-
-- ✅ 53,682 tasks with realistic naming
-- ✅ 2,530 team memberships (proper boundaries)
-- ✅ 70,956 custom field values (70% coverage)
-- ✅ 0 referential integrity violations
-- ✅ 0 temporal consistency violations
-- ✅ Production-grade schema (28 indexes)
-
-## 📄 License
-
-CC0 (Public Domain) - for generated data and code examples
-
-## 🤝 Contributing
-
-This is an assignment project. For production use, consider:
-- Real data scrapers (respecting robots.txt and API terms)
-- LLM integration for richer descriptions
-- More sophisticated temporal models
-- Additional Asana entities (portfolios, goals, forms)
-
----
-
-**Generated with ❤️ for realistic RL environment seed data**
