@@ -1,0 +1,5 @@
+Faker==23.3.0
+python-dotenv==1.0.1
+tqdm==4.66.1
+numpy==1.26.2
+requests==2.31.0

@@ -1,0 +1,9 @@
+output/
+*.sqlite
+__pycache__/
+.env
+docs/
+FINAL_SUBMISSION_GUIDE.md
+FINAL_SUMMARY.txt
+REVIEW_AND_FIXES.md
+SUBMISSION_READY.md
